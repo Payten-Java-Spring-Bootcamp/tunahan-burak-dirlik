@@ -1,6 +1,4 @@
-# tunahan-burak-dirlik
-
-HOMEWORK 1
+# HOMEWORK 1
 
 # 1. Pass by value, pass by reference kavramları nedir ? Java’ ile ilişkili olarak açıklayınız.
 
@@ -26,7 +24,9 @@ public static void main(String[] args) {
 
 Output:
 Before method call --> number:10
+
 addvalue method    --> number:100
+
 After method call  --> number:10
 
 Örnekte de görüldüğü üzere number değişkenine ilk olarak 10 değeri atanmıştır. changeValue metodu ile değişkenin değeri 100 olacak şekilde bir işlem yapılmıştır. Metot içerisinde değişkenin değerini yazdırdığımızda 100 olarak görürüz. Değişkenin değerini metot dışında tekrardan yazdırmak istersek 10 değeri ile karşılaşırız. Çünkü metot içerisinde değişkenin orjjinal adres alanındaki değer üzerinde değil kopyası üzerinde değişiklik yapılmıştır. Bu pass by value yaklaşımıdır. Özet olarak metot içine geçirilen değişken metot içinde kalır. Dışarının haberi olmaz.
@@ -64,7 +64,8 @@ public final class ImmutableClassExample {
     }
     Public String getSurname() {
         return surname;
-}}
+	}
+}
 ```
 
 # 3. Framework ve library arasındaki fark nedir ?
