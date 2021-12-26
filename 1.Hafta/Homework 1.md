@@ -144,4 +144,3 @@ java.util.function paketi altında 4 tane göze çarpan önemli functional inter
 
 10. Soru Kaynak -->  https://www.fibiler.com/Functional-Interface_Kategori_1276
 
-Tunahan Burak Dirlik
