@@ -40,10 +40,15 @@ Türkçesi referans ile geçirmedir. Bu yaklaşımda metota değişkenin kopyas�
 Immutability değişmezlik demektir. Java’da immutable sınıflar, nesneleri oluşturulduktan sonra üzerinde oynama yapılamayan, içeriği değiştirilemeyen sınıflardır. Nesneler oluşturulurken ilk değer atanır ve bir daha o değere dokunulmaz. Bunun tersi de mutable (değişebilir) sınıflardır. Burda nesneler immutable yapılmadığı sürece üzerlerinde istenilen değişiklikler yapılabilinir. Immutability bazı ihtiyaçlardan dolayı doğmuştur. Örnek vermek gerekirse çok iş parçacıklı ortamlarda (multithreaded) immutable şekilde oluşturulan nesnelerin değerleri ne kadar thread çalışırsa çalışsın değişmeyeceği için o nesneyi güvenilir yapar. Başka bir threadin nesneyi değiştiren bir iş parçacığının neden olduğu hataları önler. Immutability; çok iş parçacıklı ortamlarda, streamlerde nesneyi değişmez yapma, güvenilir yapma özelliğinden dolayı önemlidir ve tercih sebebidir. Immutable nesne veya sınıf kullanımın da bazı dezavantajları vardır. Eğer o nesneyi değiştirmek istersek kopyasını oluşturmalı ve onun üzerinden işlem yapmalıyız. Bu da bellek, zaman konusunda ek maliyetlere neden olur. Java’da immutable classlara örnek verecek olursak String ve tüm ilkel sarmalayıcı sınıflar (wrapper class) Byte, Short, Integer, Long, Float, Double, Char, Boolean, Byte, BigDecimal, BigInteger immutable sınıflardır.  
 
 Bir Java sınıfı nasıl immutable yapılır ?
+
 •	Classın başına final anahtarı getirilir.Bu şekilde extend olayı önlenmiş olur.
+
 •	Classın tüm değişkenleri private yapılır. Doğrudan erişime bu şekilde izin verilmez.
+
 •	Tüm değiştirilebilir alanlara final anahtarı eklenir.
+
 •	Final işaretlenen alanların ilk değerleri constructor ile atanır.
+
 •	Değişkenlere setter metotlar oluşturulmaz, varsa kaldırılır. Tekrardan değer ataması önlenir
 
 ```
