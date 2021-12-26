@@ -56,7 +56,8 @@ public class StreamOperations {
         //Lets try these methods
         System.out.println(concat(collection1, collection2));
         System.out.println(difference(collection1, collection).collect(Collectors.toList()));
-        System.out.println(distinct(collection1).collect(Collectors.toList()));System.out.println("--------------");
+        System.out.println(distinct(collection1).collect(Collectors.toList()));
+        System.out.println("--------------");
         slice(collection1, 0, 3);
 
     }
