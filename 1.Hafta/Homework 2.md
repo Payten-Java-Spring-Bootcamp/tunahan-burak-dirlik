@@ -18,5 +18,3 @@ Collection pipeline ları debug etmenin zor olduğundan bahsedilmiş. Uygun bir 
 ## When to use it
 Bu modeli kullanabildiğimiz durumlar ve kullandığımız zaman sıkıntı yaratan durumlar vardır.
 Temiz lambda ifadelerini kullanabilmek için iyi bir dil desteğinin olması gerekiyor. Yoksa sıkıntı yaratabilir. Bu ifadeleri Ruby ve Clojure dilleri çok iyi destekler. 
-
-Tunahan Burak Dirlik
