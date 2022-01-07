@@ -1,3 +1,5 @@
+# METOTLARIN POSTMAN ÜZERİNDEN TESTTLERİ
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Payten-Java-Spring-Bootcamp/tunahan-burak-dirlik/main/2.%20Hafta/Week2Coding/Screen%20Shots/1.png"/>
 </p>
