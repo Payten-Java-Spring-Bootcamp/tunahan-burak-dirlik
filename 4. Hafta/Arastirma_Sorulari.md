@@ -1,4 +1,25 @@
+# Regression test nedir
+Yazılımda herhangi ufak bir değişiklik ya da yeni bir fonksiyon birçok beklenmedik sonuç doğurabilir. Regresyon testinin amacı, bu değişiklikler sonrası yazılımın hala doğru şekilde çalıştığını kontrol etmektir.
+Regresyon testi canlıda çalışan kodun üzerinde yapılan değişikliklerin kontrolü için kullanılır. Bu değişiklikler yeni bir fonksiyon, hata çözümü ya da performans geliştirmesi olabilir. Regresyon testleri genellikle değişiklikler son aşamaya geldiğinde ve yazılımın yeni sürümü yayınlamadan önce gerçekleştirilir. Regresyon testlerinin öncelikli amacı, uygulamanın kritik alanlarının hala beklendiği gibi çalıştığını kontrol etmektedir. 
+Regresyon testleri:
+- Yazılımın değişiklik sonrasında son kalitesinin kontrol edilmesini
+- Daha önce çıkan hataların düzeldiğinin kontrolünü
+- Yazılım ekibinin ürün hakkında güveninin artmasını sağlar
+
+Regresyon testleri maliyeti büyük testlerdir. Yazılım firmasında maliyet = zamandır ve sürümün hızlı şekilde canlı ortama aktarılması büyük önem taşır. Bu sebeple regresyon test adımları seçiminde bazı önemli noktaları göz önüne almalıyız. Bunlar:
+-	Kullanıcıların yoğun olarak kullanıldığı alanlar
+-	Genellikle hata çıkan uygulama alanları
+-	Ana fonksiyonlar
+-	Yüksek karmaşık fonksiyonlar
+-	Son değişikliklerin yapıldığı alanlar
+-	Önemli entegrasyonlar
+Regresyon testlerinin doğru şekilde planlanması ve gerçekleştirilmesi, yazılım projelerinin başarıya ulaşması için önemlidir. Bu nedenle canlı geçişleri öncesi, regresyon testleri gerçekleştirerek yazılıma duyulan güveni arttırabiliriz.
+
+
 # A/B test nedir ?
+
+A / B testi (bölme testi veya kova testi olarak da bilinir) hangisinin daha iyi performans gösterdiğini belirlemek için bir web sayfasının veya uygulamanın iki sürümünü birbiriyle karşılaştırmanın bir yöntemidir. AB testi, esas olarak, bir sayfanın iki veya daha fazla varyantının rasgele kullanıcılara gösterildiği bir deneydir ve hangi varyasyonun belirli bir dönüşüm hedefi için daha iyi performans gösterdiğini belirlemek için istatistiksel analiz kullanılır.
+Bir varyasyonu güncel bir deneyimle doğrudan karşılaştıran bir AB testi yayınlamak, web sitenizdeki veya uygulamanızdaki değişiklikler hakkında odaklanmış sorular sormanıza ve ardından bu değişikliğin etkisiyle ilgili verileri toplamanıza olanak tanır.
 
 # Black box / white box test kavramlarını açıklayınız.
 
