@@ -75,3 +75,28 @@ Müşteri ihtiyaçlarına yönelik test senaryoları koda dökülerek test senar
 <p align="center">
   <img src="https://miro.medium.com/max/625/1*Xi8OSu86TMg5iGNdODoLUw.jpeg" />
 </p>
+
+
+# Agile test quadrant nedir ? Quadrant’ların kapsamını kısaca açıklayınız.
+Test Türlerinin iki yönünü birleştiren Çevik Test Çeyrekleri Brian Marick tarafından türetilmiştir.
+
+<p align="center">
+  <img src="https://www.tutorialspoint.com/agile_testing/images/quadrants.jpg" />
+</p>
+
+Çevik Test Çeyrekleri, ekiplerin ihtiyaç duyulan testi belirlemesine, planlamasına ve uygulamasına yardımcı olmak için yararlı bir sınıflandırma sağlar.
+
+Quadrant Q1 − Birim Düzeyi, Teknolojiye Yönelik ve geliştiricileri destekler. Birim testleri bu Çeyreğe aittir. Bu testler Otomatik testler olabilir.
+
+Quadrant Q2 – Sistem düzeyi, işle ilgili ve uygun ürün davranışı. Fonksiyonel testler bu çeyreğe aittir. Bu testler manuel veya otomatiktir.
+
+Quadrant Q3 − Sistem veya Kullanıcı Kabul Düzeyi, İşe Yönelik ve gerçek zamanlı senaryolara odaklanma. Kullanıcı Kabul Testleri bu çeyreğe aittir. Bu testler manueldir.
+
+Quadrant Q4 − Sistem veya Operasyonel Kabul Düzeyi, Teknolojiyle Karşılaşılan ve Performansa Odaklanma, Yük, Stres, Sürdürülebilirlik, Ölçeklenebilirlik Testleri. Otomasyon testleri ile birlikte bu testler için özel araçlar kullanılabilir.
+
+Bunları birleştirerek, Ne-Test-Ne Zaman'ı yansıtan Çevik Test Çeyrekleri aşağıdaki gibi görselleştirilebilir.
+
+<p align="center">
+  <img src="https://www.tutorialspoint.com/agile_testing/images/testing_quadrants.jpg" />
+</p>
+
