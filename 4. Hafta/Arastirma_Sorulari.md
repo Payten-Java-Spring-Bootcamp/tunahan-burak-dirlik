@@ -1,0 +1,61 @@
+# A/B test nedir ?
+
+# Black box / white box test kavramlarını açıklayınız.
+
+## Black box test
+Yazılımın iç yapısı incelenmeden sisteme yapılan giriş ve çıkış değerlerinin incelendiği bir test türüdür. Bu testin amaçları şöyle sıralanabilir.
+
+- Sistemin açılış ve kapanış esnasında karşılaşılacak problemlerin keşfi.
+- Yanlış ve ya eksik çalışan fonksiyonların keşfi.
+- Ara yüz zafiyetlerinin keşfi.
+- Veri tabanına erişim kayıtlanma veya olası diğer zafiyetlerin keşfi.
+- Sistemin davranışsal hatalarının ve uygulama sorunlarının keşfi.
+
+## White box test
+
+Kod içindeki sorunları tespit etmek için yapılan testlere denir. Sistemin işleyişi ve kod bilgisi önemlidir. Çünkü testler bu bilgilere göre yapılır.
+Sistemdeki kodların uyumluluğunu ve doğruluğunu bu test sayesinde anlarız.
+Kodun optimizasyonunu sağlar. White box test neyi amaçlar
+
+- Testteki her hangi bir potansiyel hata verecek kod yapısını tespiti.
+- İlerleyen süreçlerde çıkacak olan gizli hataların olmaması birim aşamada emin olmak.
+
+<p align="center">
+  <img src="https://miro.medium.com/max/626/1*mCKlxuntIR99t_jfg_fk4w.png" />
+</p>
+
+<p align="center">
+  <img src="https://miro.medium.com/max/624/1*7ujXlwrf8bexK0ttWPY0aw.png" />
+</p>
+
+
+
+# Mutation test nedir ? Kısaca açıklayınız.
+
+Türkçe'ye mutasyon testi olarak geçen mutation test, test case'lerin kalitesini ölçmek ve arttırmak için uygulanan bir test türüdür.
+Bu test türünde yazılımın içine hatalar konulur ve test caselerin bu hataları bulma oranı hesaplanır.
+Yazılımın değiştirilmiş her haline mutant denir. Test caselerin bu yazılımdaki değişiklikleri yani mutasyonu bulması beklenir.
+Tespit edilen her mutasyona göre başarı oranı hesaplanır. Ne kadar çoksa başarı oranı o kadar fazladır. 
+Mutation test kısaca testin testidir.
+
+<p align="center">
+  <img src="https://miro.medium.com/max/1400/1*Xo-UF0x8tGEAIZy52d-zPw.png" />
+</p>
+
+<p align="center">
+  Mutasyon testin çalışma mantığı
+</p>
+
+# Behavior Driven Development (BDD) nedir, neyi amaçlamaktadır ?
+
+Test driven developmentın karmaşıklığını gidermek için ortaya çıkan bir test yaklaşım biçimidir. Yazılım süreçleri daha test odaklı gider. Test senaryoları  Given, when, then olarak 3 başlıkta ilerler.
+
+- Given --> belirlenen test senaryosu bu başlıkta oluşturulur. 
+- When  --> testin  gerçekleşeceği zamanı anlatır.
+- Then  --> test ile alakalı belirlenen senaryonun ve aksiyonun sonucu burada belli olur. Kısaca test sonucu burada belli olur.
+
+Müşteri ihtiyaçlarına yönelik test senaryoları koda dökülerek test senaryoları hazırlanır. Bu yüzden ihtiyaçlar daha iyi karşılanır.
+
+<p align="center">
+  <img src="https://miro.medium.com/max/625/1*Xi8OSu86TMg5iGNdODoLUw.jpeg" />
+</p>
