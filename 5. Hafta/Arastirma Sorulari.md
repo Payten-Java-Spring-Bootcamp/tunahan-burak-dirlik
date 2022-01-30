@@ -7,10 +7,9 @@ Concurrent programming; (eş zamanlı programlama) aşina olduğumuz multithread
 Concurrent programmingde, tek bir işlem ünitesinde birden çok işlemi yapmaya yöneliriz. 
 
 ### Parallel Programming
-Parallelism; gelen taskların birden fazla işlem ünitesi ile aynı anda çalıştırılmasıdır. Daha hızlı sonuç verebilir. Taskların birden fazla işlem ünitesinde çalıştırılması demek, 
-taskların birden fazla cpu üzerinde çalışması demektir. Bu da daha fazla donanım kaynağının kullanılması anlamına gelir.
+Parallel programlama; gelen taskların birden fazla işlem ünitesi ile aynı anda çalıştırılmasıdır. Daha hızlı sonuç verebilir. Taskların birden fazla işlem ünitesinde çalıştırılması demek, taskların birden fazla cpu üzerinde çalışması demektir. Bu da daha fazla donanım kaynağının kullanılması anlamına gelir.
 
-Concurrency ve parallelism arasındaki fark en sade şekliyle şudur; Concurrency aynı anda bir çok taskı aynı anda yürütmek, parallelism aynı anda bir çok taskı yan yana yürütmektir.
+Concurrency ve parallelism arasındaki fark en sade şekliyle şudur; Concurrency bir çok taskı aynı anda yürütmek, parallelism aynı anda bir çok taskı yan yana yürütmektir.
 
 <p align="center">
   <img src="https://miro.medium.com/max/1400/1*cFUbDHxooUtT9KiBy-0SXQ.jpeg" />
