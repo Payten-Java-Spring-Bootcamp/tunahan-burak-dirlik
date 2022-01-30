@@ -31,7 +31,7 @@ Bir işlemi gerçekleştirmek için 2 tane anahtara ihtiyacımız var diyelim. 2
   <img src="https://raw.githubusercontent.com/Payten-Java-Spring-Bootcamp/tunahan-burak-dirlik/main/5.%20Hafta/mutex%20ornegi.png" />
 </p>
 <p align="center">
-  "C dilinde mutex örneği"
+  Daha önce Operating Systems dersi kapsamında yaptığım C dilinde  mutex örneği
 </p>
 
 
@@ -46,6 +46,9 @@ Semaphore'da ise böyle bir kısıtlama yoktur hatta birçok durumda Semaphore'u
   <img src="https://raw.githubusercontent.com/Payten-Java-Spring-Bootcamp/tunahan-burak-dirlik/main/5.%20Hafta/semaphore%20ornegi.png" />
 </p>
 
+<p align="center">
+  C dilinde Semaphore örneği
+  </p>
 
 # 3. Java’da Error ve Exception arasındaki fark nedir ? Throwable ile ilişkileri nasıldır ? Hangi tür durumlarda Error hangi tür durumlarda Exception meydana gelebilir ? Örneklerler açıklayınız. 
 
@@ -53,13 +56,54 @@ Semaphore'da ise böyle bir kısıtlama yoktur hatta birçok durumda Semaphore'u
 Error handle edilemeyen hatalardır. Program akışının durmasına sebep olur. Uygulamanın yakalamaya çalışmaması gereken ciddi sorunları gösteren Throwable dan türeyen bir alt sınıftır.
 ### Exception
 Exceptio -ı ise try catch bloklarıyla yakalayabiliriz. Program akışı; exception eğer yakalandıysa devam eder. Exception yaşandığında; bunun program için arasıra yaşansa da sorun olmayacağı uygulamanın devam edebileceği anlaşılır. Exception ve Error; ikisi de Throwable sınıfından türer. Aşağıdaki görsel ile aralarındaki ilişkiyi daha net görebiliriz.
-<p align="center">    <img src="https://www.fatalerrors.org/images/blog/7bba3f7352c8c8b15be1f90568857dce.jpg" /> </p>
+
+<p align="center">    <img src="https://www.fatalerrors.org/images/blog/7bba3f7352c8c8b15be1f90568857dce.jpg " /> </p>
 <p align="center">    <img src="https://i.stack.imgur.com/v2NAj.png" /> </p>
 Exception programın kodlanmasında yapılan hataların sonucudur, Error sistemin yanlış çalışmasının sonucudur.
 
 # 4. Spring’te yer alan @Scheduled anotasyonunun kullanım amaçlarını ve kullanım şeklini açıklayınız.
 
+Spring, neredeyse hiç threadler için kod yazmadan tasklarımızı yazmamızı sağlar. Yani bizi daha da soyutlar, altta yer alan detaylar ile uğraştırmaz. Periyodik olarak yapmak istediğimiz metodun başına @Scheduled anotasyonunu eklememiz yeterli olur. Uygulamamıza @EnableScheduling anotasyonunu ekleriz. Zamanlamak istediğimiz metoda da @Scheduled anotasyonunu ekleriz
+
+```java
+@EnableScheduling
+public class ScheduledTasks {
+@Scheduled(fixedRate = 5000)
+public void task1() {
+System.out.println(Thread.currentThread().getName()+" Task 1 executed at "+ new Date());
+    }
+@Scheduled(fixedRate = 1000)
+public void task2() {
+System.out.println(Thread.currentThread().getName()+" Task 2 executed at "+ new Date());
+    }
+}
+```
+
 # 5. Spring’te yer alan @Async anotasyonunun kullanım amaçlarını ve kullanım şeklini açıklayınız.
+Basitçe söylemek gerekirse, bir bean’in methoduna @Async annotationu eklemek onun main thread’den farklı olarak ayrı bir threadde çalıştırılmasını sağlar. Yani call edilen methodun tamamlanmasını call eden kısım beklemez. Kod böylece async olarak çalışmış olur.
+
+Kullanımı 
+```java
+//Main class
+@SpringBootApplication
+@EnableAsync
+public class SpringAsyncApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringAsyncApplication.class, args);
+    }
+}
+```
+
+```java
+
+@Async // add to method
+public void asyncMethod() {
+    System.out.println("Async Method");
+}
+//bu metot public olmalı
+```
+
 
 # 6. High Availability (HA) kavramını kısa açıklayınız. 
 Yüksek erişilebilirlik, 7×24 çalışan sistemlerin gerek otomatik gerekse manual sebeplerden dolayı yazılım veya donanımdan kaynaklanacak kesintilere uğramaksızın hizmet vermesidir. 
@@ -92,11 +136,32 @@ Fakat bu kavram önemli midir, tabiki de önemlidir. Yazılımın nasıl yapıla
 yazılımı yapabilsin.
 # 9. Core Domain, Supporting Domain, Generic Domain kavramlarını DDD kapsamında açıklayınız. 
 
-# 10. Anemic Domain Model ve Rich Domain Model kavramlarını kıyaslayarak açıklayınız. 
-Anemic Domain Model : Yine DDD kullanmıyorsak ya da DDD’yi ilk implemente edişimiz ise sık karşılaşabileceğimiz bir durum. Anemic domain model, hiç bir fonksiyonelliği olmayan içerisinde hiç bir fonksiyon barındırmayan sadece propertylerden oluşmuş bir modeldir ve düşünüldüğünde OOP’e aykırı bir yapı teşkil eder.
+Core domain - iş için gerekli olan en önemli alt alan. Onsuz, iş başarısız olur.
 
-Rich Domain Model
+Supporting domain - iş için core domain etki alanından daha az değerli olan alt domain. Onsuz iş, bir süre hayatta kalabilir . Ancak yine de oldukça önemlidir (core domaini destekler), ayrıca alana özeldir ve geliştirilmesi gerekir. 
+
+Generic Domain - ?
+# 10. Anemic Domain Model ve Rich Domain Model kavramlarını kıyaslayarak açıklayınız. 
+Anemic Domain Model : DDD kullanmıyorsak ya da DDD’yi ilk implemente edişimiz ise sık karşılaşabileceğimiz bir durum. Martin Fowler'in bir anti-pattern olarak bahsettiği, domain logic icermeyen domain modellere verdigi isim. Anemic model pseucode gibi aslında.
+
+Wiki den basit örnek:
+
+Anemic
+```java
+class Box
+{
+    public int Height { get; set; }
+    public int Width { get; set; }
+}
+```
+
+Rich Domain Model ise anladığım kadarıyla anemic domain modelin tam tersi.
+OOP paradigmalarını domain logicleri  içeren model. 
 
 # References
 - https://www.gencayyildiz.com/blog/domain-driven-design-stratejik-ve-taktiksel-olarak-derinlemesine-inceleme/
 - https://www.ahmetkaymaz.com/2008/01/02/sql-server-yuksek-erisilebilirlik-high-availability/
+- https://tugrulbayrak.medium.com/spring-scheduled-task-bc14d5695dc9
+- https://medium.com/@eomercelik/async-in-spring-e86173f61b56#:~:text=Basitçe%20söylemek%20gerekirse%2C%20bir%20bean,böylece%20async%20olarak%20çalışmış%20olur.
+- mutex - semaphore -- > https://eksisozluk.com
+- https://stackoverflow.com/questions/25274226/ddd-identifying-the-core-domain
