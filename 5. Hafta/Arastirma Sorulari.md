@@ -53,7 +53,7 @@ Semaphore'da ise böyle bir kısıtlama yoktur hatta birçok durumda Semaphore'u
 Error handle edilemeyen hatalardır. Program akışının durmasına sebep olur. Uygulamanın yakalamaya çalışmaması gereken ciddi sorunları gösteren Throwable dan türeyen bir alt sınıftır.
 ### Exception
 Exceptio -ı ise try catch bloklarıyla yakalayabiliriz. Program akışı; exception eğer yakalandıysa devam eder. Exception yaşandığında; bunun program için arasıra yaşansa da sorun olmayacağı uygulamanın devam edebileceği anlaşılır. Exception ve Error; ikisi de Throwable sınıfından türer. Aşağıdaki görsel ile aralarındaki ilişkiyi daha net görebiliriz.
-<p align="center">    <img src="https://www.fatalerrors.org/images/blog/7bba3f7352c8c8b15be1f90568857dce.jpg " /> </p>
+<p align="center">    <img src="https://www.fatalerrors.org/images/blog/7bba3f7352c8c8b15be1f90568857dce.jpg" /> </p>
 <p align="center">    <img src="https://i.stack.imgur.com/v2NAj.png" /> </p>
 Exception programın kodlanmasında yapılan hataların sonucudur, Error sistemin yanlış çalışmasının sonucudur.
 
