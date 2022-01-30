@@ -62,7 +62,7 @@ Exception programın kodlanmasında yapılan hataların sonucudur, Error sistemi
 
 # 4. Spring’te yer alan @Scheduled anotasyonunun kullanım amaçlarını ve kullanım şeklini açıklayınız.
 
-Spring, neredeyse hiç threadler için kod yazmadan tasklarımızı yazmamızı sağlar. Yani bizi daha da soyutlar, altta yer alan detaylar ile uğraştırmaz. Periyodik olarak yapmak istediğimiz metodun başına @Scheduled anotasyonunu eklememiz yeterli olur. Uygulamamıza @EnableScheduling anotasyonunu ekleriz. Zamanlamak istediğimiz metoda da @Scheduled anotasyonunu ekleriz
+Periyodik olarak yapmak istediğimiz metodun başına @Scheduled anotasyonunu ekleriz. Uygulamamıza @EnableScheduling anotasyonunu @Scheduled ı kullanabilmek için eklemek gerek. Zamanlamak istediğimiz metoda da @Scheduled anotasyonunu ekleriz. Belli bi sürede veya aralıkta çalışması gereken metotlarda kullanılır.
 
 ```java
 @EnableScheduling
@@ -79,7 +79,8 @@ System.out.println(Thread.currentThread().getName()+" Task 2 executed at "+ new 
 ```
 
 # 5. Spring’te yer alan @Async anotasyonunun kullanım amaçlarını ve kullanım şeklini açıklayınız.
-Basitçe söylemek gerekirse, bir bean’in methoduna @Async annotationu eklemek onun main thread’den farklı olarak ayrı bir threadde çalıştırılmasını sağlar. Yani call edilen methodun tamamlanmasını call eden kısım beklemez. Kod böylece async olarak çalışmış olur.
+Bir bean’in methoduna @Async annotationu eklemek onun main thread’den farklı olarak ayrı bir threadde çalıştırılmasını sağlar. Yani call edilen methodun tamamlanmasını
+call eden kısım beklemez. Kod böylece async olarak çalışmış olur.
 
 Kullanımı 
 ```java
