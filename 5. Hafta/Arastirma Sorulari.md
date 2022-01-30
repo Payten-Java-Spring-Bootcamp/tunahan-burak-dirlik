@@ -18,7 +18,7 @@ Concurrency ve parallelism arasındaki fark en sade şekliyle şudur; Concurrenc
 <p align="center">    Concurrency vs Parallelism   </p>
 
 # 2. Mutex ve Semaphore kavramlarını açıklayınız. Hangi tür durumlarda bunlara başvurmamız gerekir ?
-## Mutex
+### Mutex
 Açılımı mutual exclusion dur. Multitasking sistemlerde deadlock denilen durumu engellemek için kullanılan bir mekanizma. Mutex i anlamak için Deadlock kavramını da bilmek gerekir.
 
 Deadlockda birçok thread birbirini bekliyor ve ilerleme gerçekleşmiyor.
