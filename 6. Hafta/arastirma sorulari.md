@@ -95,6 +95,9 @@ Dolayısıyla SoundCloud bir taraftan yeni özellikler için veya bazı ana uygu
 Circuit breaker, hizmet alınan serviste, o servise gelen istekleri, sayısını kontrol eden, hataları algılayan, sistemin kötü durumlara karşı çalışabilirliğini sağlamaya çalışan pattern çeşididir. Sistemin sağlıklı işleyişi için gereklidir.
 Başarısız isteklerde bu istekleri alternatif api lere yönlendirebilir. Elektirik devresindeki sigortalar da bir circuit breakerdır. Bu kavram aslında ordan gelmiş, aynı mantık burda da geçerli, 
 
+## 7. Microservice chassis pattern’ ı kısaca açıklayınız.
+Cross cutting concern leri servislerimizden ayırarak ayrı servise yazarız böylelikle koda reusebality sağlar, kod tekrarının önüne geçmiş oluruz, böyle bir pattern. 
+
 ### KAYNAKÇA
 - https://caylakyazilimci.com/post/ci-cd-nedir
 - https://ipwithease.com/saas-vs-paas-vs-iaas/
