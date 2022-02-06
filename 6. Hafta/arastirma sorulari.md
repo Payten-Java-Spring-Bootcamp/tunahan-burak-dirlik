@@ -4,6 +4,8 @@
 
 Melvin Conway
 
+Conway abimiz burda diyor ki developerların kendi aralarında kurduğu iç ileitişim direkt ürüne yansıyor. Diğer bir deyişle ürün bu iletişimin şekillendirdiği bir süreçte tasarlanıyor ve ortaya çıkıyor.
+
 ## 2. Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), On-Premises kavramlarını örneklerle açıklayınız.
 
 ### SaaS (Software as a Service)
