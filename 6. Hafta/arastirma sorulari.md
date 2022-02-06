@@ -74,9 +74,9 @@ Api gateway ile güvenlik ile ilgili riskler azaltılır.
 ## 5. Backend for frontend (BFF) pattern’ ı açıklayınız.
 
 ilgili frontende özgü ihtiyaçlar doğrultusunda geliştirilmiş backend diyebiliriz. 
-Yani ön yüz için geliştirilmiş, ön yüze özgü olarak, onun ihtiyaçlarını göz önüne alarak geliştirilmiş sunucu uygulaması.
+Yani farklı farklı frontendler için geliştirilmiş, o frontende özgü olarak, onun ihtiyaçlarını göz önüne alarak geliştirilmiş sunucu uygulamaları.
 
-Tek bir API varsa genel amaçlı API (general purpose API Gateway) oluyor, istemcilere göre veya fonksiyonlara göre özelleştirince, istemciye veya fonksiyonlara göre özelleştirilmiş API’ler (client-specific APIs veya BFFs) oluyor.
+Tek bir API varsa genel amaçlı API (general purpose API Gateway) oluyor, istemcilere göre veya fonksiyonlara göre özelleştirince, istemciye veya fonksiyonlara göre özelleştirilmiş API’ler (client-specific APIs veya BFFs) oluyor. Ben microservice in de microsu olarak tanımladım.
 
 Burdan alıntıdır > [-->]https://medium.com/bilişim-hareketi/backend-for-what-backend-for-frontend-bff-102737928c6b 
 > Kavram SoundCloud tarafından ortaya atılmış. Yeni bir yaklaşım/mimari kalıp olmaktan çok yeni bir isimlendirme. Hikayesi şöyle. SoundCloud’un Ruby on Rails ile yazılmış monolitik bir uygulaması varmış. Bu uygulama içine gömülü bir katman olarak dışa açık bir API bulunuyormuş. Hem SoundCloud’un kendi geliştirdiği mobil/web uygulamalar, hem web uygulamalarında gömülü olarak çalışan küçük uygulamacıklar (web widgets), hem de 3. partiler aynı API’yi kullanıyormuş. Ön tarafta çalışan tüm uygulamaların ortak kullandığı genel amaçlı bir API. Burada karşılaşılan iki ana problem şöyle:
