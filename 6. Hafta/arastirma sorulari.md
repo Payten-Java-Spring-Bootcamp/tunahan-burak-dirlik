@@ -93,3 +93,9 @@ Dolayısıyla SoundCloud bir taraftan yeni özellikler için veya bazı ana uygu
 Circuit breaker, hizmet alınan serviste, o servise gelen istekleri, sayısını kontrol eden, hataları algılayan, sistemin kötü durumlara karşı çalışabilirliğini sağlamaya çalışan pattern çeşididir. Sistemin sağlıklı işleyişi için gereklidir.
 Başarısız isteklerde bu istekleri alternatif api lere yönlendirebilir. Elektirik devresindeki sigortalar da bir circuit breakerdır. Bu kavram aslında ordan gelmiş, aynı mantık burda da geçerli, 
 
+### KAYNAKÇA
+- https://caylakyazilimci.com/post/ci-cd-nedir
+- https://ipwithease.com/saas-vs-paas-vs-iaas/
+- https://www.argenova.com.tr/saas-software-as-a-service-nedir
+- https://medium.com/peoplebox-ats/saas-nedir-faydaları-nelerdir-2a866b13315d
+- https://medium.com/bilişim-hareketi/backend-for-what-backend-for-frontend-bff-102737928c6b
