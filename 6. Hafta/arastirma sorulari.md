@@ -1,6 +1,6 @@
 # HOMEWORK 6
 ## 1. Conway’in Kanunu’ nu (Conway’s Law) açıklayınız.
-“Sistemleri tasarlayan organizasyonlar … kendi iletişim yapılarının birer kopyasını üretmekle sınırlıdır” 
+“Sistemleri tasarlayan organizasyonlar kendi iletişim yapılarının birer kopyasını üretmekle sınırlıdır” 
 
 Melvin Conway
 
